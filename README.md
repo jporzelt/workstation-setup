@@ -18,3 +18,5 @@ Run the full setup script set with
 - zoom (external script to run it on every update)
 - keepassxc
 - nextcloud
+- rsync
+

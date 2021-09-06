@@ -10,6 +10,9 @@ sudo apt-get install curl
 # git
 sudo apt-get install git
 
+# git
+sudo apt-get install rsync
+
 # sdkman
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
