@@ -10,7 +10,6 @@ set -e
 rsync -aHAXvP $1:/home/johannesp/.ApacheDirectoryStudio/ /home/johannesp/.ApacheDirectoryStudio/
 rsync -aHAXvP $1:/home/johannesp/.bash_history /home/johannesp/.bash_history
 rsync -aHAXvP $1:/home/johannesp/.bashrc /home/johannesp/.bashrc
-rsync -aHAXvP $1:/home/johannesp/.cache/ /home/johannesp/.cache/
 rsync -aHAXvP $1:/home/johannesp/.config/ /home/johannesp/.config/
 rsync -aHAXvP $1:/home/johannesp/.cups/ /home/johannesp/.cups/
 rsync -aHAXvP $1:/home/johannesp/Desktop/ /home/johannesp/Desktop/
