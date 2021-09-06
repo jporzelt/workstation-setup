@@ -1,8 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 set -e
 
 sudo apt-get update
+
+# curl
+sudo apt-get install curl
 
 # git
 sudo apt-get install git
@@ -22,23 +25,20 @@ sdk install gradle
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
-sudo groupadd docker
+sudo groupadd -f docker
 sudo usermod -aG docker $USER
 
 # rambox pro
 snap install ramboxpro
 
 # intellij idea
-snap install intellij-idea-ultimate
+snap install intellij-idea-ultimate --classic
 
 # spotify
 snap install spotify
 
 # chromium
 snap install chromium
-
-# zoom (external script to run it on every update)
-sh ./zoom.sh
 
 # keepassxc
 sudo apt-get install keepassxc
@@ -48,5 +48,7 @@ sudo add-apt-repository ppa:nextcloud-devs/client
 sudo apt-get update
 sudo apt install nautilus-nextcloud
 
+# zoom (external script to run it on every update)
+sh ./zoom.sh
 
 
