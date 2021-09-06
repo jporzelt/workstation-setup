@@ -6,4 +6,15 @@ Run the full setup script set with
 
 # features
 
-- 
+- git
+- sdkman
+- java
+- gradle
+- docker
+- rambox pro
+- intellij idea
+- spotify
+- chromium
+- zoom (external script to run it on every update)
+- keepassxc
+- nextcloud
