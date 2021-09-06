@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ -z "$1" ]; then
+  echo 'Need to pass an ip'
+  exit 1
+fi
+
+
 set -e
 
 cd /home/johannesp/
