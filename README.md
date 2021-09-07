@@ -24,6 +24,11 @@ Run the full setup script set with
 - terraform
 - gradle wrapper gw
 
+# Data transfer
+
+Install openssh on the old machine and add the ssh key of the new machine to the authorized keys.
+Then adjust and run `copy-files.sh`
+
 # Others
 
 ## Show modified configuration files
