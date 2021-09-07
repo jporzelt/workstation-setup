@@ -1,11 +1,11 @@
-# workstation-setup
+# Workstation-setup
 
 Update docker-compose version in setup.sh.
 Run the full setup script set with
 
 `./setup.sh`
 
-# tasks
+## Setup tasks
 
 - git
 - sdkman
@@ -24,13 +24,13 @@ Run the full setup script set with
 - terraform
 - gradle wrapper gw
 
-# other commands
+# Others
 
-## show modified configuration files
+## Show modified configuration files
 
 `sudo debsums -ce`
 
-## search history back and forward
+## Search history back and forward
 
 ```
 cat > ~/.inputrc << EOF
@@ -39,6 +39,6 @@ cat > ~/.inputrc << EOF
 EOF
 ```
 
-## keyboard shortcuts
+## Keyboard shortcuts
 
 Disable ubuntu keyboard shortcuts that conflict with intellij idea see `disable_keys1.png` and `disable_keys2.png`.
