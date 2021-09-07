@@ -30,7 +30,9 @@ show modified configuration files
 
 search history back and forward
 
-`cat > ~/.inputrc << EOF
+```
+cat > ~/.inputrc << EOF
 "\e[5~": history-search-backward   
 "\e[6~": history-search-forward
-EOF`
+EOF
+```
