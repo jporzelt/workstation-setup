@@ -54,4 +54,7 @@ sudo apt install nautilus-nextcloud
 # zoom (external script to run it on every update)
 sh ./zoom.sh
 
+# disable swap
+sudo sed -i '/ swap / s/^/#/' /etc/fstab
+
 

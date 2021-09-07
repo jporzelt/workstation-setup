@@ -19,4 +19,10 @@ Run the full setup script set with
 - keepassxc
 - nextcloud
 - rsync
+- disable swap
 
+# other commands
+
+show modified configuration files
+
+`sudo debsums -ce`
