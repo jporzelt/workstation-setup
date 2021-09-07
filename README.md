@@ -26,11 +26,11 @@ Run the full setup script set with
 
 # other commands
 
-show modified configuration files
+## show modified configuration files
 
 `sudo debsums -ce`
 
-search history back and forward
+## search history back and forward
 
 ```
 cat > ~/.inputrc << EOF
@@ -38,3 +38,7 @@ cat > ~/.inputrc << EOF
 "\e[6~": history-search-forward
 EOF
 ```
+
+## keyboard shortcuts
+
+Disable ubuntu keyboard shortcuts that conflict with intellij idea see `disable_keys1.png` and `disable_keys2.png`.
