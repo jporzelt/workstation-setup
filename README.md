@@ -4,7 +4,7 @@ Run the full setup script set with
 
 `./setup`
 
-# features
+# tasks
 
 - git
 - sdkman
@@ -20,6 +20,7 @@ Run the full setup script set with
 - nextcloud
 - rsync
 - disable swap
+- terraform
 
 # other commands
 
