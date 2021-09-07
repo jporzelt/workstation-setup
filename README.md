@@ -1,8 +1,9 @@
 # workstation-setup
 
+Update docker-compose version in setup.sh.
 Run the full setup script set with
 
-`./setup`
+`./setup.sh`
 
 # tasks
 
