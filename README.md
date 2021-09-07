@@ -21,6 +21,7 @@ Run the full setup script set with
 - rsync
 - disable swap
 - terraform
+- gradle wrapper gw
 
 # other commands
 
