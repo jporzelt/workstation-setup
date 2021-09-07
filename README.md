@@ -1,6 +1,6 @@
 # Workstation-setup
 
-Update docker-compose version in setup.sh.
+Adjust docker-compose and java version in setup.sh.
 Run the full setup script set with
 
 `./setup.sh`
