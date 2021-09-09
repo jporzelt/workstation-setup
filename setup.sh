@@ -68,3 +68,6 @@ sudo apt-get install terraform
 # gradle wrapper gw
 curl -fsSL https://github.com/gdubw/gng/releases/latest/download/gng-installer.sh -o gng-installer.sh
 sudo bash ./gng-installer.sh
+
+# gnome-tweak-tool (make sure universe repo is included 'sudo add-apt-repository universe')
+sudo apt install gnome-tweak-tool

@@ -23,6 +23,7 @@ Run the full setup script set with
 - disable swap
 - terraform
 - gradle wrapper gw
+- gnome-tweak-tool
 
 # Data transfer
 
