@@ -20,7 +20,6 @@ Run the full setup script set with
 - keepassxc
 - nextcloud
 - rsync
-- disable swap
 - terraform
 - gradle wrapper gw
 - gnome-tweak-tool
@@ -48,3 +47,14 @@ EOF
 ## Keyboard shortcuts
 
 Disable ubuntu keyboard shortcuts that conflict with intellij idea see `disable_keys1.png` and `disable_keys2.png`.
+
+## Avoid swapping
+
+See https://linuxize.com/post/how-to-change-the-swappiness-value-in-linux/
+
+Add to `/etc/sysctl.conf`
+
+```
+vm.swappiness = 1
+vm.max_map_count = 262144
+``
