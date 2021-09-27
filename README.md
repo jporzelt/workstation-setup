@@ -23,6 +23,7 @@ Run the full setup script set with
 - terraform
 - gradle wrapper gw
 - gnome-tweak-tool
+- stop auto nw printer search
 
 # Data transfer
 

@@ -68,3 +68,7 @@ sudo bash ./gng-installer.sh
 
 # gnome-tweak-tool (make sure universe repo is included 'sudo add-apt-repository universe')
 sudo apt install gnome-tweak-tool
+
+# stop auto nw printer search
+sudo systemctl stop cups-browsed
+sudo systemctl disable cups-browsed
