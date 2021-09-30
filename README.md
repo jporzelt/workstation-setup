@@ -24,6 +24,7 @@ Run the full setup script set with
 - gradle wrapper gw
 - gnome-tweak-tool
 - stop auto nw printer search
+- restricted extras
 
 # Data transfer
 
