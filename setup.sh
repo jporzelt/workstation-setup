@@ -10,7 +10,7 @@ sudo apt-get install curl
 # git
 sudo apt-get install git
 
-# git
+# rsync
 sudo apt-get install rsync
 
 # sdkman
