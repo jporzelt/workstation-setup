@@ -46,6 +46,15 @@ cat > ~/.inputrc << EOF
 EOF
 ```
 
+## In-memory /tmp folder
+
+Add to /etc/fstab
+
+```
+# in-memory /tmp
+none /tmp tmpfs defaults 0 0
+```
+
 ## Keyboard shortcuts
 
 Disable ubuntu keyboard shortcuts that conflict with intellij idea see `disable_keys1.png` and `disable_keys2.png`.
