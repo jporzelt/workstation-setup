@@ -48,11 +48,15 @@ EOF
 
 ## In-memory /tmp folder
 
-Add to /etc/fstab
+Add to /etc/fstab 
+
+https://wiki.archlinux.org/title/Tmpfs
+
+https://wiki.centos.org/TipsAndTricks/TmpOnTmpfs
 
 ```
 # in-memory /tmp
-none /tmp tmpfs defaults 0 0
+tmpfs   /tmp         tmpfs   rw,nodev,nosuid,size=4G          0  0
 ```
 
 ## Keyboard shortcuts
