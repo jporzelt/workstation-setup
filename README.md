@@ -56,7 +56,7 @@ https://wiki.centos.org/TipsAndTricks/TmpOnTmpfs
 
 ```
 # in-memory /tmp
-tmpfs   /tmp         tmpfs   rw,nodev,nosuid,size=4G          0  0
+none   /tmp         tmpfs   rw,nodev,nosuid,size=4G          0  0
 ```
 
 ## Keyboard shortcuts
