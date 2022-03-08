@@ -72,8 +72,9 @@ Add to `/etc/sysctl.conf`
 ```
 vm.swappiness = 1
 vm.max_map_count = 262144
-``
+```
 
 ## Alternative unix commands
 
 https://github.com/ibraheemdev/modern-unix
+
