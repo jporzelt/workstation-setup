@@ -79,11 +79,19 @@ vm.max_map_count = 262144
 https://github.com/ibraheemdev/modern-unix
 
 
-## Disable microphone of webcam
+## Disable microphone of webcam/monitor
 
 See https://forums.linuxmint.com/viewtopic.php?t=267051
 
-Create `/etc/udev/rules.d/90-block-webcam-sound.rules` with
+For Logitech C505 webcam create `/etc/udev/rules.d/90-block-webcam-sound.rules` with
 ```
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", ATTR{bInterfaceClass}=="01", ATTR{authorized}="0"
 ```
+
+For MSI Monitor create `/etc/udev/rules.d/90-block-monitor-sound.rules` with
+```
+ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="4c3a", ATTR{bInterfaceClass}=="01", ATTR{authorized}="0"
+```
+
+
+
