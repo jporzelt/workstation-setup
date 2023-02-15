@@ -94,7 +94,8 @@ SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idPr
 
 SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idProduct}=="c022", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=saturation=140 --device /dev/%k"
 
-SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idProduct}=="c022", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=brightness=140 --device /dev/%k"
+# better use auto low light enhancement of zoom
+#SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idProduct}=="c022", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=brightness=140 --device /dev/%k"
 ```
 
 For MSI Monitor create `/etc/udev/rules.d/90-block-monitor-sound.rules` with
