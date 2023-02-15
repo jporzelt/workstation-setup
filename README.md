@@ -88,6 +88,15 @@ For Logitech C505 webcam create `/etc/udev/rules.d/90-block-webcam-sound.rules` 
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", ATTR{bInterfaceClass}=="01", ATTR{authorized}="0"
 ```
 
+For Dell Pro webcam webcam create `/etc/udev/rules.d/99-local-dell-webcam.rules` with
+```
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idProduct}=="c022", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=zoom_absolute=200 --device /dev/%k"
+
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idProduct}=="c022", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=saturation=140 --device /dev/%k"
+
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="413c", ATTRS{idProduct}=="c022", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=brightness=140 --device /dev/%k"
+```
+
 For MSI Monitor create `/etc/udev/rules.d/90-block-monitor-sound.rules` with
 ```
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="4c3a", ATTR{bInterfaceClass}=="01", ATTR{authorized}="0"
