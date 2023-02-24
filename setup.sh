@@ -35,7 +35,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 # rambox pro
-snap install ramboxpro
+sh ./rambox-update.sh
 
 # intellij idea
 snap install intellij-idea-ultimate --classic
