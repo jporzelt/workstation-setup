@@ -69,3 +69,6 @@ sudo systemctl disable cups-browsed
 sudo apt install libdvdnav4 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg -y
 sudo dpkg-reconfigure libdvd-pkg
 sudo apt install ubuntu-restricted-extras -y
+
+# kubectl
+sudo snap install kubectl --classic
