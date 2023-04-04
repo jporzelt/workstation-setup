@@ -46,9 +46,6 @@ snap install spotify
 # chromium
 snap install chromium
 
-# keepassxc
-sudo apt-get install keepassxc
-
 # nextcloud
 sudo add-apt-repository ppa:nextcloud-devs/client
 sudo apt-get update
@@ -56,11 +53,6 @@ sudo apt install nautilus-nextcloud
 
 # zoom (external script to run it on every update)
 sh ./zoom.sh
-
-# terraform
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-sudo apt-get install terraform
 
 # gradle wrapper gw
 curl -fsSL https://github.com/gdubw/gng/releases/latest/download/gng-installer.sh -o gng-installer.sh
