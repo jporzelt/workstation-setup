@@ -19,7 +19,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 
 # java
-sdk install java 11.0.11.hs-adpt
+sdk install java 17.0.7-librca
 
 # gradle
 sdk install gradle
