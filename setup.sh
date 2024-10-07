@@ -19,7 +19,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 
 # java
-sdk install java 17.0.7-librca
+sdk install java 17.0.12-tem
 
 # gradle
 sdk install gradle
@@ -35,7 +35,7 @@ sudo usermod -aG docker $USER
 sh ./rambox-update.sh
 
 # intellij idea
-snap install intellij-idea-ultimate --classic
+# snap install intellij-idea-ultimate --classic
 
 # spotify
 snap install spotify
@@ -44,9 +44,9 @@ snap install spotify
 snap install chromium
 
 # nextcloud
-sudo add-apt-repository ppa:nextcloud-devs/client
-sudo apt-get update
-sudo apt install nautilus-nextcloud
+# sudo add-apt-repository ppa:nextcloud-devs/client
+# sudo apt-get update
+# sudo apt install nautilus-nextcloud
 
 # zoom (external script to run it on every update)
 sh ./zoom.sh
