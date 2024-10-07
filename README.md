@@ -13,14 +13,13 @@ Run the full setup script set with
 - gradle
 - docker
 - rambox pro
-- intellij idea
+- #intellij idea
 - spotify
 - chromium
 - zoom (external script to run it on every update)
 - keepassxc
-- nextcloud
+- #nextcloud
 - rsync
-- terraform
 - gradle wrapper gw
 - gnome-tweak-tool
 - stop auto nw printer search
