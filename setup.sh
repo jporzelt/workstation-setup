@@ -2,16 +2,22 @@
 
 set -e
 
-sudo apt-get update
+sudo apt update
 
 # curl
-sudo apt-get install curl
+sudo apt install curl
 
 # git
-sudo apt-get install git
+sudo apt install git
 
 # rsync
-sudo apt-get install rsync
+sudo apt install rsync
+
+# Psensor
+sudo apt install Psensor
+
+# gtimelog
+sudo apt install gtimelog
 
 # sdkman
 curl -s "https://get.sdkman.io" | bash
