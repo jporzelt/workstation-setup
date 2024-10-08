@@ -24,6 +24,8 @@ Run the full setup script set with
 - gnome-tweak-tool
 - stop auto nw printer search
 - restricted extras
+- gtimelog
+- Psensor
 
 # Data transfer
 
