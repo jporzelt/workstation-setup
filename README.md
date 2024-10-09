@@ -105,4 +105,12 @@ ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="4c
 ```
 
 
+## Biometric
 
+After enabled fingerprint for the user and added some fingers also activate it in pam module:
+
+```
+sudo pam-auth-update
+```
+
+Activate “Fingerprint authentication”.
