@@ -29,7 +29,7 @@ Run the full setup script set with
 
 # Data transfer
 
-Install openssh on the old machine and add the ssh key of the new machine to the authorized keys.
+Install `openssh-server` on the old machine and add the ssh key of the new machine to the authorized keys.
 Then adjust and run `copy-files.sh`
 
 # Others
