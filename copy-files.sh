@@ -19,7 +19,7 @@ rsync -aHAXvP $1:/home/johannesp/Videos/ /home/johannesp/Videos/
 rsync -aHAXvP $1:/home/johannesp/Documents/ /home/johannesp/Documents/
 rsync -aHAXvP $1:/home/johannesp/Pictures/ /home/johannesp/Pictures/
 rsync -aHAXvP $1:/home/johannesp/Downloads/ /home/johannesp/Downloads/
-rsync -aHAXvP $1:/home/johannesp/Development/ /home/johannesp/Development/
+rsync -aHAXvP --mkpath $1:/home/johannesp/Development/ /home/johannesp/Development/
 
 
 
