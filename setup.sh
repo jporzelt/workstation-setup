@@ -16,6 +16,9 @@ sudo apt install rsync
 # Psensor
 sudo apt install Psensor
 
+# v4l-utils (camera settings)
+sudo apt install v4l-utils
+
 # gtimelog
 sudo apt install gtimelog
 
