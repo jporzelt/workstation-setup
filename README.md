@@ -27,6 +27,7 @@ Run the full setup script and the reboot.
 - restricted extras
 - gtimelog
 - psensor
+- v4l-utils (camera settings)
 
 # Data transfer
 
