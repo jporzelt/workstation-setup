@@ -9,23 +9,24 @@ Run the full setup script set with
 
 - git
 - sdkman
+- nvm
 - java
 - gradle
 - docker
 - rambox pro
-- #intellij idea
+- #intellij idea -> toolbox
 - spotify
 - chromium
 - zoom (external script to run it on every update)
 - keepassxc
-- #nextcloud
+- #nextcloud -> not in use
 - rsync
 - gradle wrapper gw
 - gnome-tweak-tool
 - stop auto nw printer search
 - restricted extras
 - gtimelog
-- Psensor
+- psensor
 
 # Data transfer
 
