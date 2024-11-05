@@ -120,12 +120,4 @@ Activate “Fingerprint authentication”.
 
 ## Automatic audio device switch
 
-Automatically switch to plugged in USB audio device for wireplumber
-
-```
-mkdir -p ~/.config/wireplumber/
-mkdir -p ~/.config/wireplumber/main.lua.d
-gnome-text-editor ~/.config/wireplumber/main.lua.d/51-alsa-custom.lua
-# add the line 'switch_on_connect = true'
-systemctl --user restart wireplumber.service
-```
+TODO: Automatically switch to plugged in USB audio device for wireplumber.
