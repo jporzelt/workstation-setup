@@ -118,39 +118,3 @@ sudo pam-auth-update
 Activate “Fingerprint authentication”.
 
 
-## Automatic audio device switch
-
-Automatically switch to plugged in USB audio device for wireplumber.
-
-Create `/usr/share/wireplumber/main.lua.d/60-usb-auto-switch.lua` and add
-
-```
--- Automatically switch to USB input/output audio devices by setting high priority
-table.insert(alsa_monitor.rules, {
-   matches = {
-      -- Rule for USB output devices (e.g., speakers, headphones)
-      {
-         { "node.name", "matches", "alsa_output.*" },
-         { "device.api", "matches", "alsa" },
-         { "device.bus", "matches", "usb" },
-      },
-      -- Rule for USB input devices (e.g., microphones, headsets)
-      {
-         { "node.name", "matches", "alsa_input.*" },
-         { "device.api", "matches", "alsa" },
-         { "device.bus", "matches", "usb" },
-      },
-   },
-   apply_properties = {
-      ["priority.driver"] = 2000,      -- Set high priority for USB devices
-      ["priority.session"] = 2000,
-      ["node.disabled"] = false,       -- Ensure device is enabled
-   },
-})
-```
-
-Then reload 
-```
-systemctl --user restart wireplumber
-systemctl --user restart pipewire
-```
