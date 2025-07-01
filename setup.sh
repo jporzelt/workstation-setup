@@ -33,6 +33,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 # java
 sdk install java 17.0.12-tem
 
+# VPN (restart needed)
+sudo apt install openvpn
+sudo apt install network-manager-openvpn-gnome
+
 # gradle
 sdk install gradle
 
