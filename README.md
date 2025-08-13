@@ -92,7 +92,7 @@ ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08
 SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=white_balance_automatic=0 --device /dev/%k"
 SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=white_balance_temperature=1500 --device /dev/%k"
 SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=brightness=100 --device /dev/%k"
-SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=gain=0 --device /dev/%k"
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=auto_exposure=3 --device /dev/%k"
 ```
 
 For Dell Pro webcam webcam create `/etc/udev/rules.d/99-local-dell-webcam.rules` with
