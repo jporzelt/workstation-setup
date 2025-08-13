@@ -86,9 +86,13 @@ https://github.com/ibraheemdev/modern-unix
 
 See https://forums.linuxmint.com/viewtopic.php?t=267051
 
-For Logitech C505 webcam create `/etc/udev/rules.d/90-block-webcam-sound.rules` with
+For Logitech C505 webcam create `/etc/udev/rules.d/90-local-C505-webcam.rules` with
 ```
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", ATTR{bInterfaceClass}=="01", ATTR{authorized}="0"
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=white_balance_automatic=0 --device /dev/%k"
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=white_balance_temperature=1500 --device /dev/%k"
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=brightness=100 --device /dev/%k"
+SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="08e3", PROGRAM="/usr/bin/v4l2-ctl --set-ctrl=gain=0 --device /dev/%k"
 ```
 
 For Dell Pro webcam webcam create `/etc/udev/rules.d/99-local-dell-webcam.rules` with
